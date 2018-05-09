@@ -1,3 +1,6 @@
+# In[1]:
+
+
 ## import important libraries
 import numpy as np
 from keras.utils import to_categorical
@@ -45,3 +48,22 @@ integer_encoded_data = [char_to_int[char] for char in raw_data_array]
 ## one_hot_encoding of the integer_encoded_dataset
 one_hot_encoded_data = to_categorical(integer_encoded_data)
 np.save("character_Data_onehotencoded_200000.npy",one_hot_encoded_data)
+
+
+# In[6]:
+
+
+##taking 140 previous character to get next character
+##equal to the limit to tweet allowed,because even people dont remember their previous tweet
+memory_length = 140
+##convert dataset into memory sequence of length 140.
+##Our LSTM model wil input of one such sequnce at once to output the next character.
+x_data = [np.zeros((memory_length,len(unique_characters)))]
+y_data = [np.zeros((len(unique_characters)))]
+for i in range(0,len(raw_data_array)-memory_length):
+    x_data = np.append(x_data,[one_hot_encoded_data[i:i+memory_length]],axis=0)
+    y_data = np.append(y_data,[one_hot_encoded_data[i+memory_length]],axis=0)
+    if (i%500 == 0):
+        print("Data Encoded: ",(i/(len(raw_data_array)-memory_length))*100,"%")
+x_data = x_data[1:]
+y_data = y_data[1:]
