@@ -64,6 +64,8 @@ for i in range(0,len(raw_data_array)-memory_length):
     x_data = np.append(x_data,[one_hot_encoded_data[i:i+memory_length]],axis=0)
     y_data = np.append(y_data,[one_hot_encoded_data[i+memory_length]],axis=0)
     if (i%500 == 0):
-        print("Data Encoded: ",(i/(len(raw_data_array)-memory_length))*100,"%")
+        print("Data Encoded: ",(i/100),"%")
 x_data = x_data[1:]
 y_data = y_data[1:]
+np.save("seq_Data_onehotencoded_200000.npy",x_data)
+np.save("seq_out_Data_onehotencoded_200000.npy",y_data)
