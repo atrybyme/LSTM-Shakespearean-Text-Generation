@@ -29,7 +29,7 @@ raw_data= open(dataset_name,"r").read().lower()
 raw_data_array = np.array(list(raw_data))
 
 ##clipping dataset because my laptop cannot preprocess this much data(lol)
-raw_data_array = raw_data_array[0:200000]
+raw_data_array = raw_data_array[0:5000]
 ##get all the uniqure characters in the array
 unique_characters = np.unique(raw_data_array)
 ##save unique character to use later in future for prediction
@@ -47,7 +47,7 @@ pickle_out.close()
 integer_encoded_data = [char_to_int[char] for char in raw_data_array]
 ## one_hot_encoding of the integer_encoded_dataset
 one_hot_encoded_data = to_categorical(integer_encoded_data)
-np.save("character_Data_onehotencoded_200000.npy",one_hot_encoded_data)
+np.save("character_Data_onehotencoded_5000_1.npy",one_hot_encoded_data)
 
 
 # In[6]:
@@ -67,5 +67,5 @@ for i in range(0,len(raw_data_array)-memory_length):
         print("Data Encoded: ",(i/100),"%")
 x_data = x_data[1:]
 y_data = y_data[1:]
-np.save("seq_Data_onehotencoded_200000.npy",x_data)
-np.save("seq_out_Data_onehotencoded_200000.npy",y_data)
+np.save("seq_Data_onehotencoded_5000_1.npy",x_data)
+np.save("seq_out_Data_onehotencoded_5000_1.npy",y_data)
