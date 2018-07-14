@@ -5,7 +5,7 @@ With the discovery of Recurrent Neural Networks(RNNs) , a whole new dimension wa
 But earlier model of RNNs suffered from a major problem with Gradients.As the model backpropogates through time gradients either vanishes or explodes depending wither the max gradient value was less than one or larger than one.
 LSTMs try to solve this problem using 4 gates.
 Basic Structure of LSTM is as follows
--[LSTM][1]
+![LSTM][1]
 __These gates are :__
 - Input Gate(Sigmoid) : Controls wether to write a cell or not.
 - Forget Gate(Sigmoid) : Controls Wether to erase data on the cell or not.
