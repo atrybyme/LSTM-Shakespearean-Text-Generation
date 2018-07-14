@@ -50,11 +50,13 @@ The programs also saves the model weights after each epoch if the accuracy incre
 > python training.py
 ### Step 5 : 
 The final code we need to run is [prediction.py][7] This will create a dummy model same as the ones in made during traninng and load one of our weights. Then it randomly takes 140 character from our dataset and creating out sequences.
+
 __Viola! We have our Shakespeare writing Dumb and Senseless things.__ 
 
 
 ## I used one of the many configuration possible. The model contains many flaws I have discussed below along with some recommendations.You can change the following parameters to get better results :
 - Take more data for training. I used only 100k characters you can take more than that for better result.
 - I trained only 15 epochs due to hardware limitation. LSTMs are hard to train and converges slowly.If you want you increase the epochs for better result._But always have a look on validation data to avoid over fitting._
-- Play with the modeL .I used a very simple LSTM model you can go for more complex model.(But keep in mind to change in the [prediction.py][7] same as you do in [training.py][6])
+- Play with the modeL .I used a very simple LSTM model you can go for more complex model.(But keep in mind to change in the [prediction.py][7] same as you do in [training.py][6]).
+
 [1]: http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png
