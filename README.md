@@ -37,7 +37,7 @@ Then we need to run [data_sequencing.py][4].This file takes character_Data_oneho
 _We are simply taking 140 character and then trying to predict 141th character_
 >python data_sequencing.py
 ### Step 3 :
-We then need to run [merger.py]. This files simply merges all the sequences to 1 big x_train file.
+We then need to run [merger.py][8]. This files simply merges all the sequences to 1 big x_train file.
 >python merger.py
 ### Step 4 :
 Now we start our training by running [training.py][6]. This files load x_train and y_train and creates our LSTM model.
@@ -60,3 +60,10 @@ __Viola! We have our Shakespeare writing Dumb and Senseless things.__
 - Play with the modeL .I used a very simple LSTM model you can go for more complex model.(But keep in mind to change in the [prediction.py][7] same as you do in [training.py][6]).
 
 [1]: http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png
+[2]: shakespeare.txt
+[3]: one_hot_encoded.py
+[4]: data_sequencing.py
+[5]: seq_data/
+[6]: training.py
+[7]: prediction.py
+[8]: merger.py
