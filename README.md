@@ -54,7 +54,7 @@ The final code we need to run is [prediction.py][7] This will create a dummy mod
 __Viola! We have our Shakespeare writing Dumb and Senseless things.__ 
 
 
-## I used one of the many configuration possible. The model contains many flaws I have discussed below along with some recommendations.You can change the following parameters to get better results :
+#### I used one of the many configuration possible. The model contains many flaws I have discussed below along with some recommendations.You can change the following parameters to get better results :
 - Take more data for training. I used only 100k characters you can take more than that for better result.
 - I trained only 15 epochs due to hardware limitation. LSTMs are hard to train and converges slowly.If you want you increase the epochs for better result._But always have a look on validation data to avoid over fitting._
 - Play with the modeL .I used a very simple LSTM model you can go for more complex model.(But keep in mind to change in the [prediction.py][7] same as you do in [training.py][6]).
