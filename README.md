@@ -12,12 +12,8 @@ __These gates are :__
 - Output Gate(Sigmoid) : Controls how much to reveal the cell for update.
 - Gate Gate(Tanh) : Controls the write value of cell.
 Here I use LSTMs to generate text.
-## Some of the snippets from my Output are :
-> that I have the count rousillon .I have a seem to me the moon , and the moon.
-
->Tongue .I will not be the count of the stores ,and the starries ,the singer ,and the starries.
-
->
+## After training and refining, the output was something like this :
+> that I have the count rousillon .I have a seem to me the moon , and the moon. Tongue .I will not be the count of the stores ,and the starries ,the singer ,and the starries. the town with thee the more the tome that man hath the mond the to fat and the tome to mire what mark her with thee the more that i may that
 ## Requirements
 - Python(3.5.2/2.7.14)
 - Keras(2.0.8)
