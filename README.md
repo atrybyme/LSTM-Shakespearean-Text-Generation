@@ -2,7 +2,7 @@
 This repository contains step by step code for generation of __Text that resemble Shakespeare Writings__.
 ## Long Short Term Memory Networks(LSTMs)
 With the discovery of Recurrent Neural Networks(RNNs) , a whole new dimension was added to the study of Deep Learning. The dimension of Time. With RNNs aur models upgraded from images to videos, time stationary signals to voices, etc.
-But earlier model of RNNs suffered from a major problem with Gradients.As the model backpropogates through time gradients either vanishes or explodes depending wither the max gradient value was less than one or larger than one.
+But earlier model of RNNs suffered from a major problem with Gradients.As the model backpropogates through time gradients either vanished or exploded depending wether the max gradient value was less than one or larger than one.
 LSTMs try to solve this problem using 4 gates.
 Basic Structure of LSTM is as follows
 ![LSTM][1]
