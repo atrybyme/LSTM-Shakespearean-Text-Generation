@@ -35,7 +35,7 @@ print("Model Building Complete")
 #for training we will create a mini batch from our dataset
 mini_batch_size = 64
 print("Training Started")
-model.fit(x_train,y_train,epochs=19,verbose=1,batch_size=mini_batch_size,validation_split=0.05,callbacks=callbacks_list)
+model.fit(x_train,y_train,epochs=25,verbose=1,batch_size=mini_batch_size,validation_split=0.05,callbacks=callbacks_list)
 print("Training Complete, Saving Model.")
 model.save("trained_model_1.h5")
 print("Model Saved")
