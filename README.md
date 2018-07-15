@@ -13,8 +13,8 @@ __These gates are :__
 - Gate Gate(Tanh) : Controls the write value of cell.
 Here I use LSTMs to generate text.
 ## After training and refining, the output was something like this :
-> __that I have the count rousillon .I have a seem to me the moon , and the moon. Tongue .I will not be the count of the stores ,and the starries ,the singer ,and the starries. the town with thee the more the tome that man hath the mond the to fat and the tome to mire what mark her with thee the more that i may that
->n hath prome,there he fall thealy be aseath your eyes to seek ne will you me fair ? that fair again unsay.demetrius loves your fair : o happy fair !your eyes are lode-stars ! and your tongue's sweet melody.were the world mine,demetrius being bated,the rest i'd give to be to you translated.o ! teach me how you look,and with what art you sway the motion of demetrius' heart.i frown upon him,yet he loves me still.o ! that your frowns would teach my smiles such skill.i give him curses,yet he gives me__
+>_ __that I have the count rousillon .I have a seem to me the moon , and the moon. Tongue .I will not be the count of the stores ,and the starries ,the singer ,and the starries. the town with thee the more the tome that man hath the mond the to fat and the tome to mire what mark her with thee the more that i may that
+>n hath prome,there he fall thealy be aseath your eyes to seek ne will you me fair ? that fair again unsay.demetrius loves your fair : o happy fair !your eyes are lode-stars ! and your tongue's sweet melody.were the world mine,demetrius being bated,the rest i'd give to be to you translated.o ! teach me how you look,and with what art you sway the motion of demetrius' heart.i frown upon him,yet he loves me still.o ! that your frowns would teach my smiles such skill.i give him curses,yet he gives me__ _
 ## Requirements
 - Python(3.5.2/2.7.14)
 - Keras(2.0.8)
